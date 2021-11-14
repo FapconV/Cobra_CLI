@@ -225,7 +225,7 @@ func init() {
 		OrigName:     true,
 	}
 
-	kv, err := os.Open("dump.jsonkv")
+	kv, err := os.Open("./dump.jsonkv")
 	if err != nil {
 
 		fmt.Println(err)
