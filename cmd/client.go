@@ -227,10 +227,9 @@ func init() {
 
 	kv, err := os.Open("dump.jsonkv")
 	if err != nil {
-		kv, err = os.Open("mdt_msg_samples/dump.jsonkv")
-		if err != nil {
-			fmt.Println(err)
-		}
+
+		fmt.Println(err)
+
 	}
 	defer kv.Close()
 
