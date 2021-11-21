@@ -211,4 +211,1502 @@
             }
         ],
         "collection_end_time": 1631103048676
+}
+{
+        "node_id_str": "uut",
+        "subscription_id_str": "test",
+        "encoding_path": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "collection_id": 111808,
+        "collection_start_time": 1631103048664,
+        "msg_timestamp": 1631103048664,
+        "data_gpbkv": [
+            {
+                "timestamp": 1631103048669,
+                "name": "",
+                "fields": [
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "keys",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "interface-name",
+                                "string_value": "GigabitEthernet0/0/0/1"
+                            }
+                        ]
+                    },
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "content",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-received",
+                                "uint64_value": 17
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-received",
+                                "uint64_value": 1442
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-sent",
+                                "uint64_value": 298683
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-sent",
+                                "uint64_value": 1631103048669
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-sent",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-sent",
+                                "uint64_value": 58565
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "runt-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "giant-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "throttled-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "parity-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "unknown-protocol-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "crc-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-overruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "framing-errors-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-ignored-packets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-aborts",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-underruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffer-failures",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffers-swapped-out",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "applique",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "resets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "carrier-transitions",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "availability-flag",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-data-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-last-clear-counters",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-discontinuity-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-received",
+                                "uint32_value": 317236
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-sent",
+                                "uint32_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collection_end_time": 1631103048676
+}
+{
+        "node_id_str": "uut",
+        "subscription_id_str": "test",
+        "encoding_path": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "collection_id": 111808,
+        "collection_start_time": 1631103048664,
+        "msg_timestamp": 1631103048664,
+        "data_gpbkv": [
+            {
+                "timestamp": 1631103048669,
+                "name": "",
+                "fields": [
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "keys",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "interface-name",
+                                "string_value": "GigabitEthernet0/0/0/1"
+                            }
+                        ]
+                    },
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "content",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-received",
+                                "uint64_value": 17
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-received",
+                                "uint64_value": 1442
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-sent",
+                                "uint64_value": 298683
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-sent",
+                                "uint64_value": 1631103048669
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-sent",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-sent",
+                                "uint64_value": 58565
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "runt-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "giant-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "throttled-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "parity-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "unknown-protocol-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "crc-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-overruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "framing-errors-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-ignored-packets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-aborts",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-underruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffer-failures",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffers-swapped-out",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "applique",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "resets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "carrier-transitions",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "availability-flag",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-data-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-last-clear-counters",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-discontinuity-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-received",
+                                "uint32_value": 317236
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-sent",
+                                "uint32_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collection_end_time": 1631103048676
+}
+{
+        "node_id_str": "uut",
+        "subscription_id_str": "test",
+        "encoding_path": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "collection_id": 111808,
+        "collection_start_time": 1631103048664,
+        "msg_timestamp": 1631103048664,
+        "data_gpbkv": [
+            {
+                "timestamp": 1631103048669,
+                "name": "",
+                "fields": [
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "keys",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "interface-name",
+                                "string_value": "GigabitEthernet0/0/0/1"
+                            }
+                        ]
+                    },
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "content",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-received",
+                                "uint64_value": 17
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-received",
+                                "uint64_value": 1442
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-sent",
+                                "uint64_value": 298683
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-sent",
+                                "uint64_value": 1631103048669
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-sent",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-sent",
+                                "uint64_value": 58565
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "runt-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "giant-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "throttled-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "parity-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "unknown-protocol-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "crc-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-overruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "framing-errors-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-ignored-packets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-aborts",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-underruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffer-failures",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffers-swapped-out",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "applique",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "resets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "carrier-transitions",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "availability-flag",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-data-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-last-clear-counters",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-discontinuity-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-received",
+                                "uint32_value": 317236
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-sent",
+                                "uint32_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collection_end_time": 1631103048676
+}
+{
+        "node_id_str": "uut",
+        "subscription_id_str": "test",
+        "encoding_path": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "collection_id": 111808,
+        "collection_start_time": 1631103048664,
+        "msg_timestamp": 1631103048664,
+        "data_gpbkv": [
+            {
+                "timestamp": 1631103048669,
+                "name": "",
+                "fields": [
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "keys",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "interface-name",
+                                "string_value": "GigabitEthernet0/0/0/1"
+                            }
+                        ]
+                    },
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "content",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-received",
+                                "uint64_value": 17
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-received",
+                                "uint64_value": 1442
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-sent",
+                                "uint64_value": 298683
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-sent",
+                                "uint64_value": 1631103048669
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-sent",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-sent",
+                                "uint64_value": 58565
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "runt-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "giant-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "throttled-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "parity-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "unknown-protocol-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "crc-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-overruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "framing-errors-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-ignored-packets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-aborts",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-underruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffer-failures",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffers-swapped-out",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "applique",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "resets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "carrier-transitions",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "availability-flag",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-data-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-last-clear-counters",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-discontinuity-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-received",
+                                "uint32_value": 317236
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-sent",
+                                "uint32_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collection_end_time": 1631103048676
+}
+{
+        "node_id_str": "uut",
+        "subscription_id_str": "test",
+        "encoding_path": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "collection_id": 111808,
+        "collection_start_time": 1631103048664,
+        "msg_timestamp": 1631103048664,
+        "data_gpbkv": [
+            {
+                "timestamp": 1631103048669,
+                "name": "",
+                "fields": [
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "keys",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "interface-name",
+                                "string_value": "GigabitEthernet0/0/0/1"
+                            }
+                        ]
+                    },
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "content",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-received",
+                                "uint64_value": 17
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-received",
+                                "uint64_value": 1442
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-sent",
+                                "uint64_value": 298683
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-sent",
+                                "uint64_value": 1631103048669
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-sent",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-sent",
+                                "uint64_value": 58565
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "runt-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "giant-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "throttled-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "parity-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "unknown-protocol-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "crc-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-overruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "framing-errors-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-ignored-packets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-aborts",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-underruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffer-failures",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffers-swapped-out",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "applique",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "resets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "carrier-transitions",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "availability-flag",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-data-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-last-clear-counters",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-discontinuity-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-received",
+                                "uint32_value": 317236
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-sent",
+                                "uint32_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collection_end_time": 1631103048676
+}
+{
+        "node_id_str": "uut",
+        "subscription_id_str": "test",
+        "encoding_path": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "collection_id": 111808,
+        "collection_start_time": 1631103048664,
+        "msg_timestamp": 1631103048664,
+        "data_gpbkv": [
+            {
+                "timestamp": 1631103048669,
+                "name": "",
+                "fields": [
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "keys",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "interface-name",
+                                "string_value": "GigabitEthernet0/0/0/1"
+                            }
+                        ]
+                    },
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "content",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-received",
+                                "uint64_value": 17
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-received",
+                                "uint64_value": 1442
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-sent",
+                                "uint64_value": 298683
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-sent",
+                                "uint64_value": 1631103048669
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-sent",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-sent",
+                                "uint64_value": 58565
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "runt-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "giant-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "throttled-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "parity-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "unknown-protocol-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "crc-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-overruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "framing-errors-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-ignored-packets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-aborts",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-underruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffer-failures",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffers-swapped-out",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "applique",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "resets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "carrier-transitions",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "availability-flag",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-data-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-last-clear-counters",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-discontinuity-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-received",
+                                "uint32_value": 317236
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-sent",
+                                "uint32_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collection_end_time": 1631103048676
+}
+{
+        "node_id_str": "uut",
+        "subscription_id_str": "test",
+        "encoding_path": "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+        "collection_id": 111808,
+        "collection_start_time": 1631103048664,
+        "msg_timestamp": 1631103048664,
+        "data_gpbkv": [
+            {
+                "timestamp": 1631103048669,
+                "name": "",
+                "fields": [
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "keys",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "interface-name",
+                                "string_value": "GigabitEthernet0/0/0/1"
+                            }
+                        ]
+                    },
+                    {
+                        "timestamp": 1631103048669,
+                        "name": "content",
+                        "fields": [
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-received",
+                                "uint64_value": 17
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-received",
+                                "uint64_value": 1442
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "packets-sent",
+                                "uint64_value": 298683
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "bytes-sent",
+                                "uint64_value": 1631103048669
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-received",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "multicast-packets-sent",
+                                "uint64_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "broadcast-packets-sent",
+                                "uint64_value": 58565
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-queue-drops",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "runt-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "giant-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "throttled-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "parity-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "unknown-protocol-packets-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "crc-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-overruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "framing-errors-received",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-ignored-packets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "input-aborts",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-errors",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-underruns",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffer-failures",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "output-buffers-swapped-out",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "applique",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "resets",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "carrier-transitions",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "availability-flag",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-data-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-last-clear-counters",
+                                "uint32_value": 0
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "last-discontinuity-time",
+                                "uint32_value": 8676
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-received",
+                                "uint32_value": 317236
+                            },
+                            {
+                                "timestamp": 1631103048669,
+                                "name": "seconds-since-packet-sent",
+                                "uint32_value": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collection_end_time": 1631103048676
 }]
