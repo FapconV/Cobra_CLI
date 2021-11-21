@@ -23,6 +23,7 @@ import (
 
 	"log"
 	"net"
+	"time"
 
 	"encoding/binary"
 
@@ -90,13 +91,16 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		loopflag := 0
-		intargument, _ := strconv.ParseInt(args[0], 0, 32)
-		for loopflag != 1 {
-			intargument--
-			if intargument == 0 {
-				loopflag = 1
-			}
+		intargument, _ := strconv.ParseInt(args[0], 10, 0)
+		// Set up a connection to the server.
+		conn, err := net.Dial("tcp", address)
+		if err != nil {
+			log.Fatalf("did not connect: %v", err)
+			fmt.Printf("did not connect: %v", err)
+		}
+		defer conn.Close()
+		for i := 0; i < int(intargument); i++ {
+			//msg, err := proto.Marshal(&c)
 			fullmsg := MDTSampleTelemetryTableFetchOne(
 				SAMPLE_TELEMETRY_DATABASE_BASIC)
 			gpbMessage := fullmsg.SampleStreamGPB
@@ -109,13 +113,6 @@ to quickly create a Cobra application.`,
 				Msglen:        uint32(len(gpbMessage)),
 			}
 
-			// Set up a connection to the server.
-			conn, err := net.Dial("tcp", address)
-			if err != nil {
-				log.Fatalf("did not connect: %v", err)
-				fmt.Printf("did not connect: %v", err)
-			}
-			defer conn.Close()
 			err2 := binary.Write(conn, binary.BigEndian, &hdr)
 			if err2 != nil {
 				fmt.Println("Failed to write data header")
@@ -129,12 +126,12 @@ to quickly create a Cobra application.`,
 				fmt.Println("Failed write data 1")
 				return
 			}
-			if wrote != len(gpbMessage) {
-				fmt.Println("Wrote %d, expect %d for data 1",
-					wrote, len(gpbMessage))
-				return
-			}
+			fmt.Println("Wrote %d, expect %d for data 1",
+				wrote, len(gpbMessage))
+
+			time.Sleep(1 * time.Second)
 		}
+
 	},
 }
 
@@ -225,7 +222,7 @@ func init() {
 		OrigName:     true,
 	}
 
-	kv, err := os.Open("./dump.jsonkv")
+	kv, err := os.Open("../dump.jsonkv")
 	if err != nil {
 
 		fmt.Println(err)
