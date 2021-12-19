@@ -33,6 +33,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"io/ioutil"
+	"math/rand"
 	"os"
 	"strings"
 
@@ -69,7 +70,7 @@ const (
 const (
 	//	address = "localhost:50051"
 	//	address = "10.105.236.227:5432"
-	address = "10.105.227.59:5432"
+	address = "103.249.77.26:5432"
 )
 
 type encapSTHdr struct {
@@ -99,10 +100,11 @@ to quickly create a Cobra application.`,
 			fmt.Printf("did not connect: %v", err)
 		}
 		defer conn.Close()
+
 		for i := 0; i < int(intargument); i++ {
-			//msg, err := proto.Marshal(&c)
+			addrow()
 			fullmsg := MDTSampleTelemetryTableFetchOne(
-				SAMPLE_TELEMETRY_DATABASE_BASIC)
+				SAMPLE_TELEMETRY_DATABASE_BASIC, i)
 			gpbMessage := fullmsg.SampleStreamGPB
 
 			hdr := encapSTHdr{
@@ -126,12 +128,9 @@ to quickly create a Cobra application.`,
 				fmt.Println("Failed write data 1")
 				return
 			}
-			fmt.Println("Wrote %d, expect %d for data 1",
-				wrote, len(gpbMessage))
-
+			fmt.Println("Wrote", wrote, "expect", len(gpbMessage), "for data 1")
 			time.Sleep(1 * time.Second)
 		}
-
 	},
 }
 
@@ -152,17 +151,19 @@ const (
 	SAMPLE_TELEMETRY_DATABASE_BASIC SampleTelemetryDatabaseID = iota
 )
 
+var database_size int
+
 var sampleTelemetryDatabase map[SampleTelemetryDatabaseID]sampleTelemetryTable
 
 func MDTSampleTelemetryTableFetchOne(
-	dbindex SampleTelemetryDatabaseID) *SampleTelemetryTableEntry {
+	dbindex SampleTelemetryDatabaseID, rowindex int) *SampleTelemetryTableEntry {
 
 	if len(sampleTelemetryDatabase) <= int(dbindex) {
 		return nil
 	}
 
 	table := sampleTelemetryDatabase[dbindex]
-	return &table[0]
+	return &table[rowindex]
 }
 
 type MDTContext interface{}
@@ -201,6 +202,101 @@ func MDTLoadMetrics() string {
 	return ""
 }
 
+func getCurrTime() uint64 {
+	now := time.Now()
+	nanos := now.Unix()
+	//millis := uint64(nanos / 1000000)
+	return uint64(nanos)
+}
+
+func addrow() {
+	marshaller := &jsonpb.Marshaler{
+		EmitDefaults: true,
+		OrigName:     true,
+	}
+
+	kv, err := os.Open("../samples/dump.jsonkv")
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer kv.Close()
+
+	dump := bufio.NewReader(kv)
+	decoder := json.NewDecoder(dump)
+
+	_, err = decoder.Token()
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	// Read the messages and build the db.
+	for decoder.More() {
+		var m telem.Telemetry
+
+		err := jsonpb.UnmarshalNext(decoder, &m)
+		if err != nil {
+			fmt.Println(err)
+		}
+		m.CollectionStartTime = getCurrTime()
+		m.MsgTimestamp = getCurrTime()
+		dataGpb := m.DataGpbkv
+		var keys, content []*telem.TelemetryField
+		for _, item := range dataGpb {
+			item.Timestamp = getCurrTime()
+			fileds := item.Fields
+			for _, f := range fileds {
+				f.Timestamp = getCurrTime()
+				if f.Name == "keys" {
+					keys = f.Fields
+				} else if f.Name == "content" {
+					content = f.Fields
+				}
+			}
+		}
+
+		fmt.Println("Keys:---------")
+		for _, item := range keys {
+			item.Timestamp = getCurrTime()
+			fmt.Println(item)
+		}
+
+		fmt.Println("Content:---------")
+		for _, item := range content {
+			item.Timestamp = getCurrTime()
+			if item.Name == "bytes-received" {
+				RandomInt := rand.Intn(100000) + 100000
+				randUnit64 := telem.TelemetryField_Uint64Value{
+					Uint64Value: uint64(RandomInt),
+				}
+				item.ValueByType = &randUnit64
+			}
+			fmt.Println(item)
+		}
+
+		m.CollectionEndTime = getCurrTime() + 10
+		gpbstream, err := proto.Marshal(&m)
+		if err != nil {
+			fmt.Println(err)
+		}
+
+		jsonstream, err := marshaller.MarshalToString(&m)
+		if err != nil {
+			fmt.Println(err)
+		}
+
+		entry := SampleTelemetryTableEntry{
+			Sample:             &m,
+			SampleStreamGPB:    gpbstream,
+			SampleStreamJSONKV: json.RawMessage(jsonstream),
+			Leaves:             strings.Count(jsonstream, "\"name\""),
+			Events:             strings.Count(jsonstream, "\"content\""),
+		}
+
+		sampleTelemetryDatabase[SAMPLE_TELEMETRY_DATABASE_BASIC] =
+			append(sampleTelemetryDatabase[SAMPLE_TELEMETRY_DATABASE_BASIC], entry)
+	}
+}
+
 func init() {
 	rootCmd.AddCommand(clientCmd)
 
@@ -222,11 +318,9 @@ func init() {
 		OrigName:     true,
 	}
 
-	kv, err := os.Open("../dump.jsonkv")
+	kv, err := os.Open("../samples/dump.jsonkv")
 	if err != nil {
-
 		fmt.Println(err)
-
 	}
 	defer kv.Close()
 
@@ -246,7 +340,43 @@ func init() {
 		if err != nil {
 			fmt.Println(err)
 		}
+		m.CollectionStartTime = getCurrTime()
+		m.MsgTimestamp = getCurrTime()
+		dataGpb := m.DataGpbkv
+		var keys, content []*telem.TelemetryField
+		for _, item := range dataGpb {
+			item.Timestamp = getCurrTime()
+			fileds := item.Fields
+			for _, f := range fileds {
+				f.Timestamp = getCurrTime()
+				if f.Name == "keys" {
+					keys = f.Fields
+				} else if f.Name == "content" {
+					content = f.Fields
+				}
+			}
+		}
 
+		fmt.Println("Keys:---------")
+		for _, item := range keys {
+			item.Timestamp = getCurrTime()
+			fmt.Println(item)
+		}
+
+		fmt.Println("Content:---------")
+		for _, item := range content {
+			item.Timestamp = getCurrTime()
+			if item.Name == "bytes-received" {
+				RandomInt := rand.Intn(100000) + 100000
+				randUnit64 := telem.TelemetryField_Uint64Value{
+					Uint64Value: uint64(RandomInt),
+				}
+				item.ValueByType = &randUnit64
+			}
+			fmt.Println(item)
+		}
+
+		m.CollectionEndTime = getCurrTime() + 10
 		gpbstream, err := proto.Marshal(&m)
 		if err != nil {
 			fmt.Println(err)

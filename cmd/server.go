@@ -18,15 +18,9 @@ package cmd
 import (
 	"fmt"
 
-	"log"
-	"net"
+	"os"
 
 	"github.com/spf13/cobra"
-
-	"google.golang.org/protobuf/proto"
-
-	network "NetSim/packet"
-	pb "NetSim/telemetry"
 )
 
 const (
@@ -44,46 +38,11 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("server called")
-		lis, err := net.Listen("tcp", port)
+		kv, err := os.Open("../samples/dump.jsonkv")
 		if err != nil {
-			log.Fatalf("failed to listen: %v", err)
+			fmt.Println(err)
 		}
-
-		go func() {
-			for {
-				conn, err := lis.Accept()
-				if err != nil {
-					log.Fatalf("did not connect: %v", err)
-				}
-
-				if conn == nil {
-					return
-				}
-
-				serv := network.NewStream(1024)
-
-				serv.OnError(func(err network.IOError) {
-					conn.Close()
-				})
-
-				serv.SetConnection(conn)
-
-				go func() {
-					for msg := range serv.Incoming {
-						log.Print(msg.Data)
-						out := &pb.Telemetry{}
-						err := proto.Unmarshal(msg.Data, out)
-						if err != nil {
-							log.Fatalln("Failed to decode", err)
-						}
-						log.Print(out)
-
-						serv.Outgoing <- network.New(0, []byte("Recieved"))
-					}
-				}()
-			}
-		}()
+		defer kv.Close()
 	},
 }
 
